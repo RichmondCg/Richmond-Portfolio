@@ -1,0 +1,132 @@
+html, body{
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: #EEEEEE;
+}
+
+header{
+	background: no-repeat;
+	background-size: cover;
+	color: white;
+}
+.h1, .card-title{
+    color: #3A4D39;
+}
+.color-overlay{
+	background-color: rgba(0, 0, 0, 0.4);
+	min-height: 60vh;
+
+}
+.card-body{
+    height: 30vh;
+}
+.btn{
+    background-color: #3A4D39;
+    color: white;
+    position: absolute;
+    bottom: 4%;
+}
+.btn:hover{
+    background-color: #334232;
+    color: white;
+}
+.indexcard{
+    width: 20rem;
+}
+.indexcard img{
+    height: 50vh;
+}
+.box{
+    background-color: #739072;
+    padding: 3%;
+    border-radius: 15px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.socialmedia{
+	gap: 3em;
+}
+.socialmedia p{
+    margin: 0;
+}
+.socialmedia{
+    margin: 6em 0 4em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+.socialmedia a{
+    width: 18em;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 1em;
+    transition: 200ms;
+}
+
+.socialmedia p{
+    margin: 0;
+}
+.socialmedia a i{
+    font-size: 1.3em;
+    width: 2.4em;
+    height: 2.4em;
+    background-color: #739072;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialmedia a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3A4D39;
+    transition: 300ms ease-in-out;
+    z-index: 0;
+}
+.socialmedia a:hover h3{
+    color: #eee6e6;
+}
+.socialmedia a:hover p{
+    color: #eee6e6;
+    transition: ease;
+    text-decoration: underline;
+}
+.socialmedia div{
+    z-index: 1;
+}
+.socialmedia a:hover i{
+    background-color: #000;
+    color: #eee6e6;
+    z-index: 1;
+}
+.socialmedia a:hover:before{
+    height: 100%;
+}
+@media (max-width: 768px){
+	.color-overlay{
+		min-height: 30vh;
+	}
+    .card img{
+        height: 40vh;
+    }
+    .indexcard img{
+        height: 30vh;
+    }
+}
+
